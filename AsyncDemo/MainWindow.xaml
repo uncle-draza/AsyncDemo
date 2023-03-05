@@ -1,0 +1,17 @@
+﻿<Window x:Class="AsyncDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsyncDemo"
+        mc:Ignorable="d"
+        Title="Sync vs Async Demo" Height="474" Width="815"
+        ResizeMode="NoResize">
+    <Grid x:Name="Async_Demo" Background="#FF71ACB6">
+        <Button x:Name="executeSync" Content="Sychrounous" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="86" Width="205" Click="executeSynchronous_Click"/>
+        <Button x:Name="executeAsync" Content="Asychrounous" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="86" Width="205" Click="executeAsynchronous_Click"/>
+        <Button x:Name="executeParallel" Content="Async Parallel" HorizontalAlignment="Left" Margin="10,338,0,0" VerticalAlignment="Top" Height="86" Width="205" Click="executeParallel_Click"/>
+        <TextBlock x:Name="resultWindow" HorizontalAlignment="Left" Margin="231,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="414" Width="559" Background="White"/>
+
+    </Grid>
+</Window>
